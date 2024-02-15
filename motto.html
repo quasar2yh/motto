@@ -19,11 +19,9 @@
         <div class="card-header">Quote</div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
-            <p id="quoteText">
-              A well-known quote, contained in a blockquote element.
-            </p>
+            <p id="quoteText">A well-known quote</p>
             <footer class="blockquote-footer">
-              <p id="authorText">Someone famous in</p>
+              <p id="authorText">author</p>
             </footer>
           </blockquote>
           <button type="button" class="btn btn-success" onclick="getMotto()">
@@ -46,6 +44,7 @@
             ).innerHTML = `${data["author"]}`;
           });
       }
+      window.onload = () => getMotto();
     </script>
   </body>
 </html>
